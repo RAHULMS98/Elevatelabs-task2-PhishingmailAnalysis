@@ -1,21 +1,52 @@
-                                                             PhishingmailAnalysis
-Methodology and Tools Used
-I conducted a step-by-step analysis of a sample phishing email using a multi-faceted approach to identify both social engineering tactics and technical red flags.
+# 🎣 Phishing Mail Analysis
 
-Email Client: Used to view the sample email and extract the raw headers for in-depth analysis.
+## 🎯 Objective
+To analyze a sample phishing email and identify both **social engineering tactics** and **technical red flags** through header and URL inspection.
 
-MXToolbox Header Analyzer: A free online tool that helped parse the complex email headers to verify the sender's authenticity and trace the email's origin. This was crucial for checking authentication records like SPF, DKIM, and DMARC.
+---
 
-URL Scanner: Used to analyze the embedded links within the email to check for malicious content and confirm if the link's destination matched its appearance.
+## 🧰 Methodology and Tools Used
 
+### 📨 **Email Client**
+Used to view the sample phishing email and extract its raw headers for in-depth technical inspection.
 
-Analysis of Findings
-Through this analysis, I identified several key indicators of a phishing attempt, including:
+### 🧩 **MXToolbox Header Analyzer**
+An online tool used to parse complex email headers, verify sender authenticity, and trace the message origin.  
+Checked authentication mechanisms such as **SPF**, **DKIM**, and **DMARC** to detect spoofing.
 
-Email Spoofing: The email address impersonated a legitimate organization but used a public email domain (@gmail.com) instead of a corporate one.
+### 🔗 **URL Scanner**
+Used to scan and verify embedded links in the email body, confirming whether their destinations matched the displayed URLs and checking for malicious content.
 
-Social Engineering: The email used an urgent and threatening tone to pressure the recipient into acting quickly.
+---
 
-Mismatched URLs: The text of the embedded link was designed to look legitimate, but the actual URL pointed to a different, non-corporate website.
+## 🔍 **Analysis of Findings**
 
-Technical Discrepancies: The header analysis revealed failed authentication checks and unusual routing, which are common with spoofed emails.****
+### ⚠️ **Email Spoofing**
+The sender impersonated a legitimate organization but used a public domain (e.g., `@gmail.com`) instead of an official corporate email address.
+
+### 🧠 **Social Engineering**
+The message used **urgency and fear tactics**, such as threatening account suspension, to manipulate the recipient into taking immediate action.
+
+### 🌐 **Mismatched URLs**
+The hyperlink text appeared legitimate but redirected to a **non-corporate** or **malicious** domain upon inspection.
+
+### 🧾 **Technical Discrepancies**
+Header analysis showed **failed SPF, DKIM, and DMARC checks**, along with unusual mail routing — strong signs of email spoofing.
+
+---
+
+## 🧩 **Conclusion**
+This exercise demonstrated how phishing emails exploit human behavior and technical loopholes.  
+By analyzing email headers, URLs, and sender details, one can identify red flags and prevent falling victim to phishing attacks.
+
+---
+
+## 📂 **Tools Referenced**
+- [MXToolbox Header Analyzer](https://mxtoolbox.com/EmailHeaders.aspx)  
+- [VirusTotal URL Scanner](https://www.virustotal.com/)  
+- Any standard email client (e.g., Outlook, Thunderbird, or Gmail)
+
+---
+
+**Author:** Rahul Malatesh Sannapujar  
+**Date:** 04/10/2025  
