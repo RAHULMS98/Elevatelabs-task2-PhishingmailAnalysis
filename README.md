@@ -49,4 +49,3 @@ By analyzing email headers, URLs, and sender details, one can identify red flags
 ---
 
 **Author:** Rahul Malatesh Sannapujar  
-**Date:** 04/10/2025  
